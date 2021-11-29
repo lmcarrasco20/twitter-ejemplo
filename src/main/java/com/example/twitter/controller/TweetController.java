@@ -52,7 +52,7 @@ public class TweetController {
     }
 
     // validación de un Tweet por un validador
-    @GetMapping("/validate/{validator}/{id}")
+    @PutMapping("/validate/{validator}/{id}")
     public ResponseEntity<String> validate(@PathVariable String validator, @PathVariable String id){
         findData();
 
